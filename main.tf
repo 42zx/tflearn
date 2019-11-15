@@ -16,7 +16,7 @@ resource "aws_instance" "example" {
   ami           = "ami-ea4ba68d"
   instance_type = "t2.micro"
   key_name = "CMKeyPair"
-  security_groups = ["${aws_security_group.instance.id}"]
+  vpc_security_group_ids = ["${aws_security_group.instance.id}"]
 
     user_data = <<-EOF
               #!/bin/bash
