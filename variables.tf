@@ -4,7 +4,7 @@ variable "server_port" {
     default = 8080
 }
 
-output "public_ip" {
+/*output "public_ip" {
     description = "public ip of EC2 instance example"
-    value = ["${aws_instance.example.public_ip}"]
-}
+    value = aws_instance.example.public_ip
+}*/
