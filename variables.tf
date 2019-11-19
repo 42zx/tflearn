@@ -4,7 +4,7 @@ variable "server_port" {
     default = 8080
 }
 
-/*output "public_ip" {
-    description = "public ip of EC2 instance example"
-    value = aws_instance.example.public_ip
-}*/
+output "alb_dns_name" {
+    description = "aws_lb.example.dns.name"
+    value = aws_lb.example.dns_name
+}
